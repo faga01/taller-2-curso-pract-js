@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --fuentePrincipal: sans-serif;
+}    
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 16px;
+}
+
+header {
+    display: block;
+}
+
+/* Seccción del header */
+
+.main-title {
+    text-align: center;
+    padding-top: 2rem;
+    font-family: var(--fuentePrincipal);
+}
+
+/* Sección del formulario 
+    Titulo del formulario  */
+
+
+.section-title {
+    text-align: center;
+    padding-top: 1rem;
+}    
+
+.payment-form {
+    text-align: center;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* selección del tipo de pago (efectivo o bono) */
+
+.payment-type {
+    padding-top: 1rem;
+}
+
+/* Secciones de pago - Introduzca valores */
+
+.payment-section {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;   
+}
+
+.payment-section label, input {
+    margin-top: 0.5rem;
+    width: 65%;
+    align-self: center;
+}
+
+.button-discount {
+    margin-top: 1.5rem;
+    width: 50%;
+    align-self: center;
+}
+
+.price-result {
+    margin-top: 1rem;
+    font-size: 26px;
+
+}
+
+
+

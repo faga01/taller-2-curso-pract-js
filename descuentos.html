@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Descuentos y porcentajes</title>
+</head>
+<body>
+    <header>
+            <h1 class="main-title">
+                Descuentos y porcentajes
+            </h1>        
+    </header>
+
+    <section>
+        <div class="section-title">
+            <h2>
+                Calcula el precio de tu producto con descuento
+            </h2>
+        </div>
+        
+
+        <form class="payment-form">
+
+            <h3>
+                Seleciona el tipo de pago para tu descuento
+            </h3>
+            <div class="payment-type">
+                <select name="" id="payment-type">
+                    <option id="cash-Payment" value="0">Efectivo</option>
+    
+                    <option id="bonus-payment" value="1">Bono</option>
+                </select>
+    
+                <button type="button" onclick="requestButton()">Listo</button>
+            </div>
+
+            <div class="payment-section cash-section" id="cashSection">
+                <label for="InputPrice">Escribe el precio de tu producto</label>
+                <input id="InputPrice" type="number">
+
+                <label for="InputDiscount">Escribe el descuento de tu producto</label>
+                <input id="InputDiscount" type="number">
+                
+                <button class="button-discount" type="button" onclick="buttonDiscount()">
+                    Calcular precio con descuento
+                </button>
+                
+            </div>
+
+            <div class="payment-section bonus-section" id="bonusSection">
+                <label for="InputPriceBono">Escribe el precio de tu producto</label>
+                <input id="InputPriceBono" type="number">
+
+                <label for="InputDiscountBono">Escribe el descuento de tu Bono</label>
+                <input id="InputDiscountBono" type="number">
+                
+                <button class="button-discount" type="button" onclick="buttonDiscountBono()">
+                    Calcular precio con descuento
+                </button>
+                
+                
+            </div>
+            <div>
+                <p class="price-result" id="resultP">
+
+                </p>
+
+            </div>
+            
+
+            
+        </form>
+    </section>
+    
+
+
+    <script src="./js/descuentos.js"></script>
+    
+</body>
+</html>
